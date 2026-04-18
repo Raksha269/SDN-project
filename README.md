@@ -54,9 +54,12 @@ Destination Host Unreachable
 
 ## 📊 Performance Analysis
 
-- Ping latency measured
-- Iperf throughput tested
-- Flow table inspected
+- Ping results show 0% packet loss indicating reliable communication.
+- Iperf shows throughput of approximately X Mbits/sec demonstrating efficient network performance.
+- Flow tables confirm that rules are installed dynamically, reducing controller overhead.
+- ARP tables confirm successful host discovery.
+
+This demonstrates correct SDN behavior and efficient network operation.
 
 ### Flow Table
 ![Flow Table](sdn-screenshots/s2.png)
@@ -68,9 +71,30 @@ Destination Host Unreachable
 ![Iperf](sdn-screenshots/s5.png)
 
 ---
+## 🔁 Flow Rule Logic
+
+The controller processes packet_in events and installs flow rules in the switch.
+
+Match fields:
+- Source MAC address
+- Destination MAC address
+- Input port
+
+Actions:
+- Forward packets to the correct output port
+
+This reduces repeated packet_in events and improves performance.
+
+## ✅ Validation
+
+- Verified connectivity using ping
+- Verified ARP learning using arp -n
+- Verified flow rules using ovs-ofctl dump-flows
+- Verified performance using iperf
 
 ## 📚 References
 
-- Mininet Documentation
-- POX Controller Docs
+- Mininet Official Documentation
+- POX Controller Documentation
 - OpenFlow Specification
+- Computer Networks – Andrew S. Tanenbaum
