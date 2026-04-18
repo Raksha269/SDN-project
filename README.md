@@ -37,7 +37,7 @@ mininet> pingall
 Result:
 0% packet loss
 
-![Ping Success](screenshots/pingsuccess.png)
+![Ping Success](sdn-screenshots/s1.png)
 
 ---
 
@@ -48,7 +48,7 @@ mininet> h1 ping h2
 Result:
 Destination Host Unreachable
 
-![Ping Failure](screenshots/pingfail.png)
+![Ping Failure](sdn-screenshots/s6b.png)
 
 ---
 
@@ -59,13 +59,13 @@ Destination Host Unreachable
 - Flow table inspected
 
 ### Flow Table
-![Flow Table](screenshots/flowtable.png)
+![Flow Table](sdn-screenshots/s2.png)
 
 ### ARP Table
-![ARP Table](screenshots/arptable.png)
+![ARP Table](sdn-screenshots/s3.png)
 
 ### Iperf Output
-![Iperf](screenshots/iperf.png)
+![Iperf](sdn-screenshots/s5.png)
 
 ---
 
