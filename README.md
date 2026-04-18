@@ -37,6 +37,8 @@ mininet> pingall
 Result:
 0% packet loss
 
+![Ping Success](screenshots/pingsuccess.png)
+
 ---
 
 ### ❌ Scenario 2: Firewall Blocking
@@ -46,30 +48,25 @@ mininet> h1 ping h2
 Result:
 Destination Host Unreachable
 
+![Ping Failure](screenshots/pingfail.png)
+
 ---
 
 ## 📊 Performance Analysis
 
 - Ping latency measured
 - Iperf throughput tested
-- Flow table inspected using:
-  sh ovs-ofctl dump-flows s1
+- Flow table inspected
 
----
+### Flow Table
+![Flow Table](screenshots/flowtable.png)
 
-## 📸 Proof of Execution
+### ARP Table
+![ARP Table](screenshots/arptable.png)
 
-Included:
-- Ping success screenshot
-/home/raksha-v/sdn-project/sdn-screenshots/pingsuccess.png
-- Ping failure screenshot
-file:///home/raksha-v/sdn-project/sdn-screenshots/pingfail.png
-- Flow table screenshot
-file:///home/raksha-v/sdn-project/sdn-screenshots/flowtable.png
-- ARP table screenshot
-file:///home/raksha-v/sdn-project/sdn-screenshots/arptable.png
-- Iperf output
-file:///home/raksha-v/sdn-project/sdn-screenshots/iperf.png
+### Iperf Output
+![Iperf](screenshots/iperf.png)
+
 ---
 
 ## 📚 References
