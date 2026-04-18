@@ -61,11 +61,15 @@ Destination Host Unreachable
 
 Included:
 - Ping success screenshot
+/home/raksha-v/sdn-project/sdn-screenshots/pingsuccess.png
 - Ping failure screenshot
+file:///home/raksha-v/sdn-project/sdn-screenshots/pingfail.png
 - Flow table screenshot
+file:///home/raksha-v/sdn-project/sdn-screenshots/flowtable.png
 - ARP table screenshot
+file:///home/raksha-v/sdn-project/sdn-screenshots/arptable.png
 - Iperf output
-
+file:///home/raksha-v/sdn-project/sdn-screenshots/iperf.png
 ---
 
 ## 📚 References
